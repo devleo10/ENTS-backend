@@ -12,7 +12,7 @@ import zoomIn from '../assets/zoom-in.svg';
 import zoomOut from '../assets/zoom-out.svg';
 import downsample from '../assets/downsample.svg';
 import downloadIcon from '../assets/download.svg';
-import GetAppIcon from '@mui/icons-material/GetApp';
+
 
 import {
   Chart as ChartJS,
@@ -440,7 +440,6 @@ function ChartWrapper({ id, data, options, stream }) {
           </ToggleButton>
         </Tooltip>
         
-      
         <Tooltip
           title='Export Chart'
           placement='bottom'
@@ -463,7 +462,7 @@ function ChartWrapper({ id, data, options, stream }) {
             onClick={handleExportChart} 
             sx={{ width: '32px', height: '32px' }}
           >
-            <GetAppIcon sx={{ width: '16px', height: '16px' }} />
+            <Box component='img' src={downloadIcon} sx={{ width: '20px', height: '20px' }}></Box>
           </ToggleButton>
         </Tooltip>
         
@@ -654,7 +653,6 @@ function ChartWrapper({ id, data, options, stream }) {
                   </ToggleButton>
                 </Tooltip>
                 
-    
                 <Tooltip
                   title='Export Chart'
                   placement='bottom'

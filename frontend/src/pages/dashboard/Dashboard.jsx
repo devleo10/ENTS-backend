@@ -84,7 +84,6 @@ function Dashboard() {
                 onClick={() => setStream(true)}>
                    Streaming
             </Button>
-            <Button>
             <Button
                variant={!stream ? "contained" : "outlined"}
                color="primary"
