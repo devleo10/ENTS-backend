@@ -736,7 +736,10 @@ describe('testing side button events', () => {
     expect(fullscreenModalElement).toBeInTheDocument();
   });
 
-  it('should trigger chart git', async () => {
+
+  
+
+  it('should trigger chart export', async () => {
     const user = userEvent.setup();
     const createElementSpy = vi.spyOn(document, 'createElement');
     const appendChildSpy = vi.spyOn(document.body, 'appendChild');

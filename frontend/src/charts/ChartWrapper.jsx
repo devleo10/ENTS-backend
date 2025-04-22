@@ -14,6 +14,7 @@ import downsample from '../assets/downsample.svg';
 import downloadIcon from '../assets/download.svg';
 
 
+
 import {
   Chart as ChartJS,
   LineController,
@@ -462,6 +463,7 @@ function ChartWrapper({ id, data, options, stream }) {
             onClick={handleExportChart} 
             sx={{ width: '32px', height: '32px' }}
           >
+          
             <Box component='img' src={downloadIcon} sx={{ width: '20px', height: '20px' }}></Box>
           </ToggleButton>
         </Tooltip>
